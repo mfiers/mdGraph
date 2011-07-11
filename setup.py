@@ -18,11 +18,11 @@ tables to google chart api plots
 """.strip()
  
 setup(name='mdGraph',
-      version='0.1',
+      version='0.1.1',
       description=DESCRIPTION,
       author='Mark Fiers',
       author_email='mark.fiers42@gmail.com',
-      url='http://mfiers.github.com/Moa/api/fist.html',
+      url='https://github.com/mfiers/mdGraph',
       packages=['mdx_mdGraph', ],
       package_dir = {'mdx_mdGraph': './mdx_mdGraph'},
       requires = [],
