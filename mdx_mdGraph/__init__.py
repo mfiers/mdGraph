@@ -14,6 +14,11 @@ import sys
 import urllib
 import markdown
 
+try:
+    from markdown.util import etree
+except:
+    from markdown import etree
+
 def _is_numeric(x):
     try:
         float(x)
@@ -67,7 +72,7 @@ class GraphProcessor(markdown.blockprocessors.BlockProcessor):
                 #
         
         imgUrl = self.GCHURL + urllib.urlencode(data)
-        el = markdown.etree.SubElement(parent, "img")
+        el = etree.SubElement(parent, "img")
         el.set('src', imgUrl)
         
 
